@@ -5,6 +5,7 @@
 }
 
 
+
 html{
     height: 100%;
 }
@@ -50,9 +51,81 @@ header{
 
     header section{
         margin-top: 12px;
+        align-content: center;
     }
 
 }
 
 /* -------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------------------------------------------- */
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 8%;
+    background-color: aquamarine;
+}
+
+footer section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer section div{
+    display: flex;
+    gap: 24px;
+}
+
+footer nav{
+    padding-top: 20px;
+}
+
+footer nav a{
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+footer nav a:hover{
+    cursor: pointer;
+    
+}
+
+@media (max-width: 480px){
+    footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    footer section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    footer nav a{
+        padding-left: 0px;
+    }
+
+
+    
+
+}
+
+
+/* -------------------------------------------------------------------------------------------TEXT STYLES----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.general-link{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.general-img{
+    min-height: 40px;
+}
+
+.display-7rem{
+    font-family: "Open Sans", sans-serif;
+    font-size: 7rem;
+}
