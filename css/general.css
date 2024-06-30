@@ -9,17 +9,17 @@ html{
     height: 100%;
 }
 
-/* HEADER */
+/* -------------------------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------------------------------------------------------- */
 
 header{
-    padding: 3% 8%;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    padding: 3% 8%;
+    background-color: aquamarine;
+    align-items: center;
 }
+
 
 #links-header{
     text-align: center;
@@ -41,3 +41,18 @@ header nav {
     border-bottom: 1px solid #1f1f1f;
     transition: linear;
 }
+
+@media (max-width: 480px){
+    header{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header section{
+        margin-top: 12px;
+    }
+
+}
+
+/* -------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------------------------------------------- */
+
