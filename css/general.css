@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+
+html{
+    height: 100%;
+}
+
+/* HEADER */
+
+header{
+    padding: 3% 8%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#links-header{
+    text-align: center;
+    align-content: center;
+}
+
+#links-header a{
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+#links-header a:hover{
+    border-bottom: 1px solid #1f1f1f;
+    transition: linear;
+}
+
+#links-header a:active{
+    border-bottom: 1px solid #1f1f1f;
+    transition: linear;
+}
