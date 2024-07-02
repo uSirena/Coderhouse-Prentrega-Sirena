@@ -15,7 +15,7 @@ body{
     background-color: #fefefe;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
     font-family: "Open Sans", sans-serif;}
 
 /* -------------------------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -25,9 +25,8 @@ header{
     justify-content: space-between;
     align-content: center;
     padding: 3% 8%;
-    background-color: aquamarine;
+    background-color: #fefefe;
     align-items: center;
-    max-width: 100vw;
 }
 
 
@@ -65,12 +64,9 @@ header{
 
 }
 
-/* -------------------------------------------------------------------------------------------MAIN----------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------HOME-MAIN----------------------------------------------------------------------------------------------------------------------------------------- */
 
 main{
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
@@ -84,8 +80,7 @@ main section.project-hero{
     justify-content: center;
     position: relative;
     min-height: 80vh;
-    width: 90%;
-    padding-bottom: 90px;
+    padding: 0px 10% 90px 10%;
     /* min-height: calc(100vh - 110px); */
     /* no puedo hacer que aplique bien el space between */
 }
@@ -114,20 +109,27 @@ main section figure{
     justify-content: center;
     top: 0;
     left: 0;
-    height: 100%;
+    height: auto;
+    
 }
 
 
 main section figure img{
-    width: auto;
+    width: 50vw;
     /* height: calc(100vh - 360px); */
-    height: 90%;
+    height: 100%;
 }
 
 
 div.infos-container{
     padding: 16px 12px;
 }
+
+div.infos-container div.info{
+    padding-bottom: 24px;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -172,6 +174,189 @@ div.infos-container{
             font-size: 6rem;
         }
 }
+
+
+/* ---SECCION ABOUT ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* seccion principal */
+main section.section-main-banner-1{ 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 112px 10%;
+    align-items: flex-end;
+    gap: 155px;
+}
+main section.section-main-banner-1 div{
+    width: 70%;
+}
+
+main section.section-main-banner-1 div.infos-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+main section.section-main-banner-1 div.infos-container div.info{
+    width: 100%;
+}
+
+main section.section-main-banner-1 div.infos-container img{
+    width: 104px;
+    height: 104px;
+    border-radius: 4px;
+    padding-bottom: 24px;
+}
+
+/* seccion de informacion de mi about */
+section.three-columns-content{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 10%;
+}
+
+section article.about-me{
+    width: 33.3333%;
+}
+
+section article.about-me h2{
+    padding-bottom: 12px;
+}
+
+section article.about-me p{
+    padding-bottom: 12px;
+}
+
+section article.about-me button{
+    padding: 6px 8px;
+    margin-top: 32px;
+    color: #1f1f1f;
+    background-color: #fefefe;
+    border: 0px 0px 1px 0px solid #1f1f1f;
+    cursor: pointer;
+}
+
+section article.about-me button:hover{
+    border: 3px solid #1f1f1f;
+}
+
+section.three-columns-content figure{
+    position: relative;
+    justify-content: flex-start;
+    width: 33.3333%;
+    height: 600px;
+    margin: 0px 48px 0px 48px;
+}
+
+main section figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+article.about-capabilities{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+ul.capabilities-list{
+    padding-top: 12px;
+}
+
+ul.capabilities-list li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1f1f1f;
+    font-style: normal;
+    padding: 2px 0px 2px 0px;
+}
+
+
+
+/* MEDIA QUERIES DE ABOUT */
+
+/* main banner */
+@media (max-width: 638px){
+
+    main section.section-main-banner-1{
+        flex-wrap: wrap;
+        padding: 112px 20px;
+        gap: 48px;
+    }
+    main section.section-main-banner-1 div{
+        width: 100%;
+    }
+
+    main section.section-main-banner-1 div h2{
+        font-size: 48px;
+    }
+
+
+    main section.section-main-banner-1 div.infos-container{
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+
+
+@media (min-width: 639px) and (max-width:939px){
+    main section.section-main-banner-1{
+        gap: 80px;
+    }
+
+    main section.section-main-banner-1 div h2{
+        font-size: 56px;
+    }
+}
+
+@media (min-width: 940px) and (max-width:1140px){
+    main section.section-main-banner-1 div h2{
+        font-size: 72px;
+    }
+}
+
+/* about me */
+@media (max-width: 638px){
+    section.three-columns-content{
+        flex-direction: column;
+        align-items:center ;
+        gap: 32px;
+        padding: 0px 40px 72px;
+    }
+
+    section.three-columns-content figure{
+        margin: 0%;
+        height: auto;
+    }
+
+    section article.about-me{
+        width: 80%;
+    }
+
+    section.three-columns-content figure{
+        width: 80%;
+    }
+
+    article.about-capabilities{
+        width: 80%;
+    }
+
+    section article.about-me button{
+        width: 100%;
+    }
+}
+
 /* -------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------------------------------------------- */
 
 footer{
@@ -179,7 +364,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 3% 8%;
-    background-color: aquamarine;
+    background-color: #fefefe;
+    margin-top: auto;
 }
 
 footer section{
@@ -228,7 +414,7 @@ footer nav a:hover{
 }
 
 
-/* -------------------------------------------------------------------------------------------TEXT STYLES----------------------------------------------------------------------------------------------------------------------------------------- */
+/* F-------------------------------------------------------------------------------------------TEXT STYLES----------------------------------------------------------------------------------------------------------------------------------------- */
 
 .general-link{
     font-family: "Open Sans", sans-serif;
@@ -247,15 +433,31 @@ footer nav a:hover{
     font-weight: 900;
 }
 
-.label-16{
+.display-88{
+    font-family: "Open Sans", sans-serif;
+    font-size: 5.5rem;
+    line-height: 100%;
+    color: #1f1f1f;
+    font-weight: 900;
+}
+
+.subtitle-18{
     font-family: "Open Sans", sans-serif;
     color: #1f1f1f;
-    font-size: 1rem;
-    letter-spacing: .6cap;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
+
 }
 
 .label-14{
     font-family: "Open Sans", sans-serif;
     color: #1f1f1f;
-    font-size: .8rem;
+    font-size: .9rem;
+    letter-spacing: .03cm;
+}
+
+.p-14{
+    font-size: .9rem;
+    color: #1f1f1f;
+    line-height: 180%;
 }
