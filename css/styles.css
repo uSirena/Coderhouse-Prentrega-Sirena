@@ -18,7 +18,7 @@ body{
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;}
 
-/* -------------------------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------HEADER----------------------------------------------------------------------------------------------------------------------------------------- */
 
 header{
     display: flex;
@@ -131,6 +131,7 @@ div.infos-container div.info{
 
 /* MEDIA QUERIES */
 
+/* banner principal */
 @media (max-width: 480px){
 
     main{
@@ -281,6 +282,8 @@ ul.capabilities-list li{
 
 
 
+
+
 /* MEDIA QUERIES DE ABOUT */
 
 /* main banner */
@@ -355,7 +358,121 @@ ul.capabilities-list li{
     }
 }
 
-/* -------------------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---SECCION CONTACT ----------------------------------------------------------------------------------------------------------------------------------------------- */
+main figure.circle-image{
+    width: auto;
+    position: relative;
+}
+
+main figure.circle-image img{
+    width: auto;
+}
+
+
+
+main section.two-columns-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px 155px 168px 155px;
+}
+
+main section form.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    padding: 0px 48px 0px 48px;
+}
+
+main section form.contact-form label{
+    font-weight:600 ;
+}
+
+
+main section form.contact-form input{
+    padding: 32px 20px;
+    border: none;
+    border-bottom: 1px solid #1f1f1f;
+    border-top: 1px solid #1f1f1f;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #b4b4b4;
+}
+
+main section form.contact-form legend{
+    font-weight:600 ;
+}
+
+main section form.contact-form textarea{
+    padding: 32px 20px;
+    border: none;
+    border-bottom: 1px solid #1f1f1f;
+    border-top: 1px solid #1f1f1f;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #b4b4b4;
+}
+
+main section.two-columns-content article.contact-details{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+
+main section.two-columns-content article.contact-details p{
+    font-weight: 700;
+}
+
+ul.socials-list{
+    padding-top: 16px;
+}
+
+ul.socials-list li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1f1f1f;
+    font-style: normal;
+    padding: 2px 0px 2px 0px;
+}
+
+ul.socials-list li a{
+    font-size: 14px;
+    line-height: 140%;
+    color: #1f1f1f;
+    font-style: normal;
+    padding: 2px 0px 2px 0px;
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+
+/* form */
+@media (max-width: 1024px){
+    main section.two-columns-content{
+        flex-wrap: wrap;
+        padding: 0px 20px 80px 20px;
+        justify-content: center;
+        gap: 48px;
+    }
+
+    main section.two-columns-content article.contact-details{
+        width: 100%;
+        align-content: flex-start;
+        padding: 0px 48px;
+    }
+
+    main section form.contact-form{
+        width: 100%;
+    }
+}
+/* ------------FOOTER----------------------------------------------------------------------------------------------------------------------------------------- */
 
 footer{
     display: flex;
@@ -412,7 +529,7 @@ footer nav a:hover{
 }
 
 
-/* F-------------------------------------------------------------------------------------------TEXT STYLES----------------------------------------------------------------------------------------------------------------------------------------- */
+/* F---TEXT STYLES----------------------------------------------------------------------------------------------------------------------------------------- */
 
 .general-link{
     font-family: "Open Sans", sans-serif;
@@ -458,4 +575,20 @@ footer nav a:hover{
     font-size: .9rem;
     color: #1f1f1f;
     line-height: 180%;
+}
+
+.primary-button{
+    font-family: "Roboto", sans-serif;
+    background-color: #1f1f1f;
+    color: #fefefe;
+    font-size: 18px;
+    padding: 20px 24px;
+    transition-duration: 0.4s;
+}
+
+.primary-button:hover{
+    background-color: #fefefe;
+    border: 2px solid #1f1f1f;
+    color: #1f1f1f;
+    cursor: pointer;
 }
